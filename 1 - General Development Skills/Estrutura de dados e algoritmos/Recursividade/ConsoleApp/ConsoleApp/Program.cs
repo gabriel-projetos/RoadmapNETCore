@@ -12,13 +12,13 @@
         public static void Regressive(int n)
         {
             Console.WriteLine(n);
-            if(n <= 0)
+            if(n <= 0) //caso base da recursão, a função não chama a si mesma
             {
                 return;
             }
             else
             {
-                Regressive(n - 1);
+                Regressive(n - 1); //caso recursivo, a função chama a si mesmo
             }
         }
     }
